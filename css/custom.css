@@ -1,0 +1,418 @@
+/* intro */
+
+
+.parallax {
+   
+    /* Set a specific height */
+   height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+	
+}
+
+body{
+font-size: 15px;
+font-family: "Open sans",Arial;
+
+}
+
+
+
+/* background images */
+
+
+#intro{
+background-image:url("../img/agrili1.jpg");
+
+color:white;
+text-align:center;
+
+}
+
+#intro > h3:nth-child(1){
+font-size:2em;
+}
+
+#intro > h1{
+font-size:4em;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+}
+
+
+
+
+/* about */
+
+.section{
+padding-top: 60px;
+
+}
+
+/* center text */
+
+/* #about > h1:nth-child(1),#about > p:nth-child(2),#portfolio > h1:nth-child(1), #contact > h1:nth-child(1),#contact > p:nth-child(2){
+text-align:center;
+
+} */
+
+div.col-md-4{
+padding-top: 40px;
+
+}
+
+
+/* portfolio */
+
+.portfolio{
+list-style:none;
+}
+
+.portfolio  li {
+text-align:center;
+background-color:white;
+  opacity:0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+position:static;
+}
+
+/*
+.portfolio li:hover{
+
+opacity:1;
+filter: alpha(opacity=100); 
+/* For IE8 and earlier 
+}
+
+
+*/
+
+
+.portfolio-image{
+
+width: 90%;
+padding-bottom: 20px;
+
+}
+
+.portfolio-image:hover{
+  
+
+
+}
+/* the portfolio scale effect */
+
+li.col-xs-12:hover{
+transform: scale(1.1);
+transition: all 0.3s ease-in;
+
+}
+
+
+.description{
+
+ 
+    text-align: center;
+	
+}
+
+
+.description a:hover, a:visited, a:link, a:active{
+  text-decoration:none;
+
+}
+
+.glyphicon-menu-right{
+margin-left: -82px;
+
+
+}
+
+
+/* bars */
+
+#chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(15) > g:nth-child(2) > text:nth-child(odd)
+
+{
+display:none;
+}
+
+/* #chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(15) > g:nth-child(2){
+
+transform:translate(96,45);
+
+} */
+
+/* #chartdiv{
+margin-left:30px;
+} */
+
+#skills > div:nth-child(1){
+
+margin-left:70px;
+}
+
+ #chartdiv, #chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1), #chartdiv > div:nth-child(1) > div:nth-child(1){
+overflow:visible!important;
+
+}
+
+
+/* form  */
+#contact_form > div:nth-child(1){
+height:107px;
+
+}
+
+
+.form-control{
+height: 42px;
+
+}
+
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/* 
+#contact{
+display:none;
+
+} */
+
+
+
+
+
+
+
+/*media queries*/
+
+
+/*col-xs*/
+@media(max-width:767px){
+
+.portfolio  li {
+
+margin-top: 0px;
+margin-right: 2.40385%;
+margin-bottom: 2.40385%;
+margin-left: 0px;
+  padding-top: 0.769231%;
+padding-right: 0.769231%;
+padding-bottom: 0px;
+padding-left: 0.769231%;
+
+
+}
+
+.form-control{
+
+margin-bottom: 10px;
+
+}
+
+textarea.form-control{
+
+}
+
+/* hide bar chart text  */
+#chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(15) > g:nth-child(1) > text:nth-child(1){
+display:none;
+}
+
+#chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(15) > g:nth-child(1) > text:nth-child(6){
+display:none;
+}
+
+#chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(15) > g:nth-child(1) > text:nth-child(9){
+display:none;
+
+}
+
+div.row:nth-child(4) > div:nth-child(1){
+    text-align: center;
+}
+
+
+
+}
+
+
+/*col-sm-6*/
+	
+@media(min-width:768px){
+
+.portfolio  li {
+
+margin-top: 0px;
+margin-right: 2.40385%;
+margin-bottom: 2.40385%;
+margin-left: 0px;
+  padding-top: 0.769231%;
+padding-right: 0.769231%;
+padding-bottom: 0px;
+padding-left: 0.769231%;
+width: 46%;
+
+}
+
+
+
+.form-control{
+
+margin-bottom: 10px;
+
+}
+
+/* hide bar chart text  */
+#chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(15) > g:nth-child(1) > text:nth-child(1){
+display:none;
+}
+
+#chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(15) > g:nth-child(1) > text:nth-child(6){
+display:none;
+}
+
+#chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(15) > g:nth-child(1) > text:nth-child(9){
+display:none;
+
+}
+
+/* center-align the about text */
+div.row:nth-child(3) > div:nth-child(1) > div:nth-child(1){
+
+text-align:center;
+
+}
+
+
+
+
+
+
+	
+	}
+
+
+/*col-md-4*/
+
+@media(min-width:992px) {
+
+.portfolio  li {
+
+margin-top: 0px;
+margin-right: 2.40385%;
+margin-bottom: 2.40385%;
+margin-left: 0px;
+   padding-top: 0.769231%;
+padding-right: 0.769231%;
+padding-bottom: 0px;
+padding-left: 0.769231%;
+width:28%;
+
+}
+/* hide bar chart text  */
+
+#chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(15) > g:nth-child(1) > text:nth-child(9){
+display:none;
+
+}
+}
+	
+	
+/*col-large*/
+	
+@media(min-width:1200px){
+	
+	#chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(15) > g:nth-child(1) > text:nth-child(1){
+display:initial;
+}
+
+#chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(15) > g:nth-child(1) > text:nth-child(6){
+display:initial;
+}
+
+#chartdiv > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(15) > g:nth-child(1) > text:nth-child(9){
+display:initial;
+
+}
+	
+	}
+
+
+
+	
+/* personal pages css */
+
+.image {
+max-width:100%
+
+
+}
+
+hr{
+border-color:black;
+}
+
+.cursor{
+cursor:pointer;
+
+}
+	
+/* 	alternate image to change with css
+.image_selector{
+background:url('../img/sbaiboscom_lightbox.jpg');
+width: 51vw;
+height: 26vw;
+
+background-size: 100%;
+
+}
+ */
+.image_scale:hover{
+-webkit-transform: scale(2, 2);
+-ms-transform: scale(2, 2);
+transform:scale(1.1, 1.1);
+transition: all 0.3s ease-in;
+
+}
+
+/* rss form */
+
+
+.custom-select {
+
+    display: inline-block;
+    max-width: 100%;
+    height: calc(3.25rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    line-height: 1.25;
+    color: #464a4c;
+    vertical-align: middle;
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+	background-size: 8px 10px;
+border: 1px solid rgba(0,0,0,.15);
+border-radius: .25rem;
+-moz-appearance: none;
+-webkit-appearance: none;
+}
+

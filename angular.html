@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+	
+
+<html lang="en" ng-app="demo">
+<head>
+<!-- Basic -->
+		<meta charset="utf-8">
+		<title>Sotiris baibos responsive html template</title>		
+		<meta name="keywords" content="sotiris baibos HTML5 Template" />
+		<meta name="description" content="sotiris baibos - Responsive HTML5 Template">
+		<meta name="author" content="sbaibos.com">
+
+		<!-- Mobile zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- css stylesheets-->
+		
+	<!-- 	<link rel="stylesheet" href="css/bootstrap.css"> -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="css/bootstrap-theme.css"> -->
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/custom.css">
+		
+		
+		<style>
+		<!-- .angular{
+		 border: 1px solid black;
+		} -->
+		
+		.image{
+		
+		display:block;
+		margin:auto;
+		width: 200px;
+		overflow: hidden;
+				
+		}
+		
+		.parent{
+		overflow: hidden;
+   
+    height: 100%;
+		}
+	.overflow{
+		
+		 
+    height: 300px;
+       
+       top: 0;
+		overflow-y:scroll
+		}
+		
+		</style>
+		
+		
+		
+		
+		
+		
+	
+
+
+</head>
+
+<body  style="background-color:#D2E1EC;">
+
+<header id="header">
+
+ <nav  class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="index.html">Sotiris Baimpos</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+
+
+                   
+                </div>
+            </div>
+        </nav>
+
+</header>
+<section id="intro" class="container-fluid section parallax">
+<H3 >Sotiris Baimpos</H3>
+<H1 class="sticky">Front end Developer</H1>
+</section>
+
+<section id="about" class="container section">
+<div class="container">
+  <h2>Angular demo for M-hospitality</h2>
+  </br>
+  <h2>Squad</h2>
+  <hr></hr>
+   
+  
+ 
+ 
+ <!-- <div ng-controller="Hello">
+			<p>The ID is {{greeting.id}}</p>
+			<p>The content is {{greeting.content}}</p>
+		</div> -->
+ 
+
+
+<div ng-controller="Hello"> 
+
+<div class="row">
+<div class="col-md-12 parent">
+
+<div class="col-md-2  " >
+
+
+
+    <!--  {{ $index }} -->
+<select class="form-control" ng-model="selecteditem"
+                            ng-options="selecteditem as selecteditem.strPlayer for selecteditem in myData | orderBy:'strSigning'">
+                        
+                    </select>
+
+
+
+</div><!-- end md-2 -->
+
+<div class="col-md-4 "> 
+
+ <span   >
+<img class="image" ng-src="{{ selecteditem.strCutout }}">  <!--player image-->
+
+</span>
+
+</div>
+<!-- end col md-4 -->
+
+
+
+<div class="col-md-6  overflow">
+
+ <span>
+<p> <h3> {{selecteditem.strPlayer}} </h3>  </p><!--name and data-->
+<p>{{selecteditem.strDescriptionEN}}   </p>
+</span>
+
+
+
+</div>
+
+<h3>Favorite</h3>
+  <hr>{{selecteditem.intLoved}}</hr>
+
+</div><!--end md 12-->
+</div><!--end row-->
+
+</div><!-- end controller-->
+
+</section>
+
+
+<footer id="footer">
+
+</footer>
+</body>
+
+
+
+
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- plugin m-hospitality demo -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="js/m-hospitality.js"></script>
+
+</html>
+	
+	
+	
+	
